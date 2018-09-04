@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body,html{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-image: url(images/kaisanew.jpg);
+        background-repeat: no-repeat;
+        background-position: 28% 30%;
+    }
+    
+    .wrap{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+   .b{
+        width: 10%;
+        height: 85%;
+        position: absolute;
+        text-align: center;
+        font-size: 50px;
+        font-family: "华文行楷";
+        padding-top: 5%;
+        z-index: 2;
+        padding-left: 0%;
+    }
+    
+    .b p:first-child{
+        animation: ziti 0.8s linear forwards;
+    }
+    
+    .b p:nth-child(2){
+        animation: ziti2 1.2s linear forwards;
+    }
+    
+    .b p:nth-child(3){
+        animation: ziti3 1.6s linear forwards;
+    }
+    
+    .b p:last-child{
+        animation: ziti4 2s linear forwards;
+    }
+    
+    @keyframes ziti{
+        0%{
+            opacity: 0;
+            filter: blur(5px);
+        }
+        10%{
+            opacity: 0.5;
+            filter: blur(3px);
+        }
+        100%{
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+    
+     @keyframes ziti2{
+        0%{
+            opacity: 0;
+            filter: blur(5px);
+        }
+        25%{
+            opacity: 0.5;
+            filter: blur(3px);
+        }
+        100%{
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+    
+     @keyframes ziti3{
+        0%{
+            opacity: 0;
+            filter: blur(5px);
+        }
+        45%{
+            opacity: 0.5;
+            filter: blur(3px);
+        }
+        100%{
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+    
+     @keyframes ziti4{
+        0%{
+            opacity: 0;
+            filter: blur(5px);
+        }
+        60%{
+            opacity: 0.5;
+            filter: blur(3px);
+        }
+        100%{
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+    
+    .photo{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        z-index: 1;
+        top: 20%;
+        left: 10%;
+    }
+    
+    .wrap .photo > div:nth-of-type(1){
+        width: 20%;
+        height: 45%;
+        border-radius: 30%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+        animation: photo2 1.2s linear forwards;
+    }
+    
+    .photo2{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+    }
+    
+    .photo2 + div{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "隶书";
+    }
+    
+    .wrap .photo > div:nth-of-type(2){
+        width: 20%;
+        height: 45%;
+        border-radius: 30%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+        animation: photo3 1.2s linear forwards;
+    }
+    
+    .photo3{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+    }
+    
+    .photo3 + div{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "隶书";
+    }
+    
+    .wrap .photo > div:nth-of-type(3){
+        width: 20%;
+        height: 45%;
+        border-radius: 30%;
+        position: absolute;
+        /*left: 35%;*/
+        overflow: hidden;
+        z-index: 2;
+        /*top: 10%;*/
+        animation: photo4 1.2s linear forwards;
+    }
+    
+    .photo4{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+    }
+    
+    .photo4 + div{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "隶书";
+    }
+    
+    .wrap .photo div:nth-of-type(4){
+        width: 20%;
+        height: 45%;
+        border-radius: 30%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+        animation: photo5 1.2s linear forwards;
+    }
+    
+    .photo5{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+    }
+    
+    .photo5 + div{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "隶书";
+    }
+    
+    @keyframes photo2{
+        0%{
+            left: 22.5%;
+            margin-top: 20%;
+        }
+        50%{
+            left:5%;
+            margin-top: 20%;
+            
+        }
+        100%{
+            left: 5%;
+            margin-top: 35%;
+        }
+    }
+    
+     @keyframes photo3{
+        0%{
+            left: 22.5%;
+            margin-top: 20%;
+        }
+        50%{
+            left:5%;
+            margin-top: 20%;
+        }
+        100%{
+            left: 5%;
+            margin-top: 7%;
+        }
+    }
+    
+    @keyframes photo4{
+        0%{
+            left: 22.5%;
+            margin-top: 20%;
+        }
+        50%{
+            left:35%;
+            margin-top: 20%;
+        }
+        100%{
+            left: 35%;
+            margin-top: 7%;
+        }
+    }
+    
+    @keyframes photo5{
+        0%{
+            left: 22.5%;
+            margin-top: 20%;
+        }
+        50%{
+            left:35%;
+            margin-top: 20%;
+        }
+        100%{
+            left: 35%;
+            margin-top: 35%;
+        }
+    }
+    
+    .bottom{
+        width: 10%;
+        height: 10%;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    
+    a:hover{
+        color: aqua;
+    }
+</style>
+<body>
+   <div class="wrap">
+        <div class="b">
+            <p>猩</p>
+            <p>球</p>
+            <p>崛</p>
+            <p>起</p>
+        </div>
+        
+        
+        <div class="photo">
+            <div>
+                <a href="people.html">
+                    <img class="photo2" src="images/happy2.jpg">
+                    <div>人物介绍</div>
+                </a>
+            </div>
+            
+            <div>
+                <a href="zong.html">
+                    <img class="photo3" src="images/happy5.jpg">
+                    <div>总体概况</div>
+                </a>
+            </div>
+            
+            <div>
+                <a href="nl.html">
+                    <img class="photo4" src="images/happy6.jpg">
+                    <div>剧情预告</div>
+                </a>
+            </div>
+            
+            <div>
+            <a href="pl.html">
+                <img class="photo5" src="images/happy7.jpg">
+                <div>发表意见</div>
+            </a>
+            </div>
+        </div>
+        
+        
+        <footer class="bottom">
+        </footer>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>《猩球崛起》</title>
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <style type="text/css">
+        body{width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            background-color: burlywood;
+        }
+        
+        .wrap{width: 100%;
+            height: 700px;
+            position: relative;
+        }
+        
+        div{
+            box-sizing: border-box;
+        }
+        
+        .topBox{
+            width: 100%;
+            height: 33%;
+            position: absolute;
+        }
+        
+        .topBox>div:nth-child(1){
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-family: "华文行楷";
+            letter-spacing: 10px;
+            font-size: 25px;
+        }
+        
+        .photoBox{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            border-top: 4px red solid;
+            position: absolute;
+            animation: light 3s linear infinite alternate;
+        }
+        
+        .fudong{
+            display: inline-block;
+            height: 90%;
+            width: 33.3333%;
+        }
+        
+		.photo{
+			display:inline-block;
+        }
+		
+		.wrap .topBox > div:last-child{
+			width:100%;
+			height:15%;
+            position: absolute;
+            border-top: 4px red solid;
+            background-color: skyblue;
+            top: 86%;
+            animation: light2 3s linear infinite alternate;
+        }
+        
+        .wrap .topBox > div:last-child div{
+            width: 10%;
+            height: 100%;
+            border-right: white solid 1px;
+            float: left;
+            text-align: center;
+            padding-top: 3px;
+            color: black;
+            background-color: skyblue;
+        }
+        
+        .wrap .topBox > div:last-child a:link div{
+            background-color: skyblue;
+        }
+        
+        .wrap .topBox > div:last-child a:hover div{
+            background-color: aqua;
+            color: blue;
+        }
+        
+        .bottomBox{
+            width: 100%;
+            height: 67%;
+            position: absolute;
+            top: 33%;
+        }
+        
+       
+        .leftBox{
+            width:25%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+        
+        .leftBox div:first-child{
+            width: 80px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 180px solid rgba(50,50,200,0.5);
+            border-right: 40px solid burlywood;
+            border-left: 40px solid burlywood;
+            top:190px;
+            left: 50%;
+            margin-left: -40px;
+        }
+        
+        .leftBox div:nth-child(2){
+            width: 80px;
+            height: 0px;
+            position: absolute;
+            display: inline-block;
+            border-bottom: 180px solid rgba(200,50,50,0.5);
+            border-right: 40px solid burlywood;
+            border-left: 40px solid burlywood;
+            top:10px;
+            left: 50%;
+            margin-left: -80px;
+        }
+        
+        .leftBox div:nth-child(3){
+            width: 80px;
+            height: 0px;
+            position: absolute;
+            display: inline-block;
+            border-bottom: 180px solid rgba(100,100,100,0.5);
+            border-right: 40px solid burlywood;
+            border-left: 40px solid burlywood;
+            top:10px;
+            left: 198px;
+            left: 50%;
+            margin-left: 0px;
+        }
+            
+        
+        .leftBox div h4{
+            width: 25px;
+            height: 120px;
+            margin-left: -6px;
+            left: -5px;
+            top: 50px;
+            position: absolute;
+            font-family: "隶书";
+            font-size: 20px;
+        }
+        
+        .rightBox{
+            width: 75%;
+            height: 90%;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            overflow: hidden;
+        }
+        
+        .rightBox div:first-child{
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            margin-left: 0.5%;
+            border-radius: 50px;
+            background-image: url(images/bbb.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            animation: back 0.5s linear forwards alternate;
+        }
+        
+       .rightBox div:nth-child(2){
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            margin-left: 100%;
+            border-radius: 50px;
+            background-image: url(images/bbb.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            animation: back2 0.5s linear forwards alternate;
+        }
+        .bottomBox2{
+            width: 100%;
+            height: 10%;
+            top: 90%;
+            position: absolute;
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        .blo>img{
+            display: block;
+            margin-left: 25%;
+        }
+        
+        
+         @keyframes light{
+            25%{
+                border-top: blue 4px solid;
+            }
+            50%{
+               border-top: green 4px solid;
+            }
+            75%{
+                border-top: yellow 4px solid;
+            }
+            100%{
+                border-top: pink 4px solid;
+            }
+        }
+        
+        @keyframes light2{
+            25%{
+                border-top: pink 4px solid;
+            }
+            50%{
+               border-top: yellow 4px solid;
+            }
+            75%{
+                border-top: green 4px solid;
+            }
+            100%{
+                border-top: blue 4px solid;
+            }
+        }
+        
+        @keyframes back{
+            100%{
+                left: 5%;
+                margin-top: 2%;
+                transform: scale(1);
+                opacity: 1;
+            }
+            75%{
+                left: 10%;
+                margin-top: 4%;
+                transform: scale(1.4);
+                opacity: 0.8;
+            }
+            50%{
+                left: 15%;
+                margin-top: 6%;
+                transform: scale(1.6);
+                opacity: 0.6;
+            }
+            25%{
+                left: 20%;
+                margin-top: 8%;
+                transform: scale(1.8);
+                opacity: 0.4;
+            }
+            0%{
+                left: 25%;
+                margin-top: 10%;
+                transform: scale(2);
+            }
+        }
+        @keyframes back2{
+            100%{
+                right: 5%;
+                margin-top: 2%;
+                transform: scale(1);
+                opacity: 1;
+            }
+            75%{
+                right: 15%;
+                margin-top: 4%;
+                transform: scale(1.4);
+                opacity: 0.8;
+            }
+            50%{
+                right: 20%;
+                margin-top: 6%;
+                transform: scale(1.6);
+                opacity: 0.6;
+            }
+            25%{
+                right: 25%;
+                margin-top: 8%;
+                transform: scale(1.8);
+                opacity: 0.4;
+            }
+            0%{
+                right: 30%;
+                margin-top: 10%;
+                transform: scale(2);
+            }
+        }
+        
+        
+        .padd{
+            padding: 150px 50px 0 50px;
+            opacity: 0;
+            animation: text 2s linear forwards;
+            text-indent: 2em;
+        }
+        
+        @keyframes text{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+        .jz{
+            display: flex;
+            position: absolute;
+            top: -17px;
+            left: 5px;
+        }
+        
+        .jz2{
+            right: 50%;
+            position: absolute;
+            top: -17px;
+            animation: motuo 5s linear infinite;
+        }
+        
+        @keyframes motuo{
+            100%{
+                right: 0%;
+            }
+        }
+        
+        .texttop{
+            width: 60%;
+            height: 30%;
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            margin-left: -30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            opacity: 0;
+            animation: texttop 2s linear forwards;
+        }
+        
+        @keyframes texttop{
+            100%{
+                opacity: 1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="wrap">
+     <div class="topBox">
+         <div style="margin-top: 5px;">
+             <b>猩球崛起</b>
+         </div>
+         <hr align="center" width="90%" color="skyblue">
+         <div class="photoBox">
+             <img class="fudong" src="images/a.jpg">
+             <img class="fudong" src="images/b.jpg">
+             <img class="fudong" src="images/c.jpg">
+         </div>
+         <div>
+             <p class="jz"><i class="fa fa-space-shuttle fa-2x"></i></p>
+             <p class="jz2"><i class="fa fa-motorcycle fa-2x"></i></p>
+             <a href="index%20.html"><div style="margin-left: 50px;">首页</div></a>
+             <a href="people.html"><div>人物介绍</div></a>
+             <a href="nl.html"><div>剧情预告</div></a>
+             <a href="pl.html"><div>发表意见</div></a>
+         </div>
+     </div>
+     
+     <div class="bottomBox">
+         <div class="leftBox">
+                <div>
+               
+                    <h4>猩球崛起</h4>
+                     
+                </div>
+                <div>
+                    
+                    <h4>黎明之战</h4>
+                    
+                </div>
+                <div>
+                    
+                    <h4>终极之战</h4>
+                    
+                </div>
+             
+             
+         </div>
+         <div class="rightBox">
+             <div></div>
+             <div></div>
+             <div class="texttop">总括</div>
+             <div class="padd">在《猩球崛起3》的一开场，导演就运用了大量的上帝视角，来描绘一场人猿之间的战役。很好的构架出人猿史诗转折的大背景时代。人猿之间的冲突，一直燃烧了影片前面的30分钟。此时，大聪已经被电影带到了情绪的沸点！但，转折来了。影片在30-40分钟之后，电影的剧情像是发生了一次病变。影片的格局瞬间从人猿史诗的大背景抽离，像泄了气的气球，变成了极小格局的剧情故事。而且剧情的讲述节奏，明显慢了下来，甚至有一两幕，有些让人感到拖沓。但好在，导演的把控还算到位，虽然格局变小了，以及每一幕的剧情节奏也慢下来了。这反而让主角凯撒的形象因此也变得更立体，但说实在的，有前两部建立凯撒从出生到现在的形象，不需要再用第三部最终章，继续花大量时间建立凯撒的内心纠结。但换个角度理解，如果说《猩球崛起》三部曲的重心，并不是放在人猿未来的大背景下；而是重点讲述凯撒的一生，那么《猩球崛起 3》这样架构剧情的走向，也是可以理解的。正如片名《猩球崛起》，整个系列正是讲述猿族崛起的故事，但这个故事却是一部辛酸史。</div>
+         </div>
+             <div class="blo">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+                 <img src="images/icon.gif">
+             </div>
+             
+         <div class="bottomBox2">
+             <hr width="90%">
+             <footer>
+            </footer>
+        </div>
+     </div>
+</div> 
+</body>
+</html>
